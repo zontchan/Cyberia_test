@@ -1,0 +1,21 @@
+.title{
+    font-family: 'Rubik', sans-serif;
+    color: #EEF3FF;
+    font-size: 38px;
+    font-weight: 500;
+
+    margin-bottom: 78px;
+}
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+
+@media (max-width: 768px) {
+    .title{
+        font-size: 21px;
+        margin-bottom: 42px;
+    }
+}

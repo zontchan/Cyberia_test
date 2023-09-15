@@ -1,0 +1,26 @@
+.projectsList{
+    display: grid;
+    grid-template-columns: repeat( 3, minmax(250px, 1fr) );
+    column-gap: 40px;
+    row-gap: 42px;
+
+    margin-bottom: 424px;
+
+    min-height: 500px;
+}
+
+@media (max-width: 1024px) {
+    .projectsList{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 24px;
+        margin-bottom: 86px;
+    }
+}
+
+@media (max-width: 960px) {
+    .projectsList{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+        margin-bottom: 227px;
+    }
+}

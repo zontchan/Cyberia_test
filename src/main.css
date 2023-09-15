@@ -1,0 +1,35 @@
+/*font-family: 'Fira Sans Condensed', sans-serif;
+font-family: 'Lexend', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Rubik', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Lexend:wght@200;400;600&family=Open+Sans:wght@300;400&family=Rubik:wght@300;500&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #EEF3FF;
+
+    transition: color 0.2s ease-in-out;
+}
+a:hover{
+    color: #2D76F9;
+}
+li{
+    list-style: none;
+}
+html, body{
+    font-family: 'Open Sans', sans-serif;
+    color: #EEF3FF;
+    font-size: 14px;
+    font-weight: 400;
+
+    background-color: #252731;
+    height: 100%;
+}
+
+

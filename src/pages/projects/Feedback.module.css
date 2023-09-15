@@ -1,0 +1,234 @@
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+
+}
+.feedback{
+    background-color: #20212C;
+    width: 100%;
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    flex-shrink: 1;
+}
+.header{
+    width: 40%
+}
+
+.title{
+    font-family: Rubik, sans-serif;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 45px;
+
+    margin-bottom: 40px;
+}
+.title:before{
+    display: block;
+    content: '';
+    width: 156px;
+    height: 144px;
+    background-image: url('../../img/planet.png');
+    margin-bottom: 14px;
+}
+
+.description{
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.form{
+    max-width: 596px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.messageTextarea{
+    max-width:100%;
+    min-width: 100%;
+    height: 92px;
+    resize: none;
+}
+.input{
+    border: 1px solid #EEF3FF;
+    width: 100%;
+    padding: 17px 18px;
+    border-radius: 7px;
+
+    transition: background-color 0.2s ease-in-out;
+}
+.input::placeholder{
+    color: #EEF3FF;
+}
+.input:focus{
+    background-color: #343541;
+}
+.buttonGroup{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sendButton{
+    width: 41%;
+    background-color: #2D76F9;
+    padding: 20px 87px;
+    border-radius: 35px;
+
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 18px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sendButton:hover{
+    background-color: #5F95FCFF;
+}
+.sendButton:active{
+    background-color: #2D76F9;
+}
+
+.info{
+    width: 52%;
+
+    line-height: 22px;
+}
+.emailInput{
+
+}
+
+.phoneInput{
+
+}
+
+
+.upload{
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.uploadInput {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+.uploadButton {
+    position: absolute;
+    cursor: pointer;
+}
+
+.customTextarea{
+    position: relative;
+}
+.wr{
+ position: absolute;
+    bottom: 11px;
+    right: 11px;
+}
+
+.uploadInfo{
+ text-align: end;
+}
+
+
+@media (max-width: 1024px) {
+    .feedback{
+        padding-top: 58px;
+        padding-bottom: 156px;
+    }
+    .content{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .wrapper{
+        width: 64%;
+        margin: 0 auto;
+
+    }
+    .header{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .title:before{
+        margin-bottom: 23px;
+    }
+    .form{
+        gap: 0;
+    }
+    .input{
+        margin-bottom: 32px;
+    }
+    .wr{
+        bottom: 45px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .feedback{
+        padding-top: 40px;
+        padding-bottom: 105px;
+    }
+    .header{
+        margin-bottom: 32px;
+    }
+  .description{
+      display: none;
+  }
+  .title{
+      font-size: 24px;
+      display: flex;
+      flex-direction: row;
+      gap: 28px;
+      line-height: 28px;
+      margin: 0;
+  }
+    .title:before{
+        width: 76px;
+        height: 70px;
+        background-size: 70px;
+        flex-shrink: 0;
+        margin: 0;
+    }
+    .messageTextarea{
+        height: 139px;
+    }
+    .input{
+        margin-bottom: 22px;
+    }
+    .sendButton{
+        margin-top: 20px;
+    }
+    .buttonGroup{
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+    }
+    .sendButton{
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+        text-align: center;
+    }
+}
